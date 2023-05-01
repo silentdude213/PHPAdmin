@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <!-- Шапка -->
+
+    <!-- Авторизация -->
+    <section class="auth">
+        <form action="" class="form">
+            <h3 class="form-title">Вход</h3>
+            <div class="form__container">
+                <div class="error-box">
+                </div>
+                <div class="auth__inputs">
+                    <label for="login">Логин</label>
+                    <input data-required="true" type="text" id="login">
+                </div>
+                <div class="auth__inputs">
+                    <label for="password">Пароль</label>
+                    <input data-required="true" type="text" id="password">
+                </div>
+                <button type="submit">Войти</button>
+            </div>
+        </form>
+        <form action="" class="form">
+            <h3 class="form-title">Вход</h3>
+            <div class="form__container">
+                <div class="error-box">
+                </div>
+                <div class="auth__inputs">
+                    <label for="login">Логин</label>
+                    <input data-maxlength="8" data-required="true" type="text" id="login">
+                </div>
+                <div class="auth__inputs">
+                    <label for="password">Пароль</label>
+                    <input data-maxlength="16" data-required="true" type="text" id="password">
+                </div>
+                <button type="submit" id="submit">Войти</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- Подвал -->
+
+    <script defer src="../assets/js/validation.js"></script>
+</body>
+</html>

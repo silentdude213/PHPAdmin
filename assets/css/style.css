@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    src: local('Ubuntu'),
+        url('/assets/fonts/ubuntu/Ubuntu-Regular.ttf');
+}
+@font-face {
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    src: local('Ubuntu'),
+        url('/assets/fonts/ubuntu/Ubuntu-Medium.ttf');
+}
+@font-face {
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    src: local('Ubuntu'),
+        url('/assets/fonts/ubuntu/Ubuntu-Bold.ttf');
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    line-height: 21px;
+    font-size: 18px;
+}
+
+._container{
+    max-width: 1570px;
+}
+button{
+    border: none;
+    outline: none;
+}
+
+
+
+
+/* Авторизация */
+
+.auth{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+.error-box{
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+}
+.error-label{
+    background: #D9534F;
+    border-radius: 4px;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    opacity: 0;
+    animation: forwards 0.5s error_appearance;
+}
+@keyframes error_appearance{
+    0% {opacity: 0;}
+    100% {opacity: 100;}
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 500px;
+    width: 100%;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    padding: 40px 30px;
+}
+.form *{
+    width: 100%;
+}
+
+.form-title{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 37px;
+}
+
+.form__container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.form__container input{
+    padding: 15px;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.form__container button{
+    background: #0285E3;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 18px;
+    color: white;
+    padding: 15px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+
+}
+.form__container button:hover{
+    background: #005897;
+    transform: scale(1.02);
+}
+
